@@ -1,0 +1,62 @@
+package MynaIcons.filled
+
+import icons.MynaIcons
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MynaIcons.Filled.MusicHexagon: ImageVector
+    get() {
+        if (_MusicHexagon != null) {
+            return _MusicHexagon!!
+        }
+        _MusicHexagon = ImageVector.Builder(
+            name = "Filled.MusicHexagon",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(11f, 13.75f)
+                arcToRelative(0.75f, 0.75f, 0f, isMoreThanHalf = true, isPositiveArc = true, 0f, 1.5f)
+                arcToRelative(0.75f, 0.75f, 0f, isMoreThanHalf = false, isPositiveArc = true, 0f, -1.5f)
+            }
+            path(fill = SolidColor(Color.Black)) {
+                moveToRelative(10.68f, 2.105f)
+                lineToRelative(-6.61f, 3.8f)
+                lineToRelative(-0.002f, 0.002f)
+                arcTo(2.65f, 2.65f, 0f, isMoreThanHalf = false, isPositiveArc = false, 2.75f, 8.198f)
+                verticalLineToRelative(7.603f)
+                arcToRelative(2.64f, 2.64f, 0f, isMoreThanHalf = false, isPositiveArc = false, 1.318f, 2.292f)
+                lineToRelative(0.003f, 0.002f)
+                lineToRelative(6.608f, 3.799f)
+                horizontalLineToRelative(0.002f)
+                arcToRelative(2.63f, 2.63f, 0f, isMoreThanHalf = false, isPositiveArc = false, 2.639f, 0f)
+                horizontalLineToRelative(0.001f)
+                lineToRelative(6.608f, -3.8f)
+                horizontalLineToRelative(0.003f)
+                arcTo(2.65f, 2.65f, 0f, isMoreThanHalf = false, isPositiveArc = false, 21.25f, 15.8f)
+                verticalLineTo(8.2f)
+                arcToRelative(2.65f, 2.65f, 0f, isMoreThanHalf = false, isPositiveArc = false, -1.318f, -2.292f)
+                lineToRelative(-6.61f, -3.8f)
+                lineToRelative(-0.002f, -0.002f)
+                arcToRelative(2.63f, 2.63f, 0f, isMoreThanHalf = false, isPositiveArc = false, -2.64f, 0f)
+                moveTo(14.5f, 8.75f)
+                horizontalLineToRelative(-1.25f)
+                verticalLineToRelative(5.75f)
+                arcToRelative(2.25f, 2.25f, 0f, isMoreThanHalf = true, isPositiveArc = true, -1.5f, -2.122f)
+                verticalLineTo(8.6f)
+                curveToRelative(0f, -0.746f, 0.604f, -1.35f, 1.35f, -1.35f)
+                horizontalLineToRelative(1.4f)
+                arcToRelative(0.75f, 0.75f, 0f, isMoreThanHalf = false, isPositiveArc = true, 0f, 1.5f)
+            }
+        }.build()
+
+        return _MusicHexagon!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _MusicHexagon: ImageVector? = null

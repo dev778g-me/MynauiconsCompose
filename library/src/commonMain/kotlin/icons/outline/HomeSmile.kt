@@ -1,0 +1,62 @@
+package MynaIcons.outline
+
+import icons.MynaIcons
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MynaIcons.Outline.HomeSmile: ImageVector
+    get() {
+        if (_HomeSmile != null) {
+            return _HomeSmile!!
+        }
+        _HomeSmile = ImageVector.Builder(
+            name = "Outline.HomeSmile",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(
+                stroke = SolidColor(Color.Black),
+                strokeLineWidth = 1.5f,
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round
+            ) {
+                moveTo(6.133f, 21f)
+                curveTo(4.955f, 21f, 4f, 20.02f, 4f, 18.81f)
+                verticalLineToRelative(-8.802f)
+                curveToRelative(0f, -0.665f, 0.295f, -1.295f, 0.8f, -1.71f)
+                lineToRelative(5.867f, -4.818f)
+                arcToRelative(2.09f, 2.09f, 0f, isMoreThanHalf = false, isPositiveArc = true, 2.666f, 0f)
+                lineToRelative(5.866f, 4.818f)
+                curveToRelative(0.506f, 0.415f, 0.801f, 1.045f, 0.801f, 1.71f)
+                verticalLineToRelative(8.802f)
+                curveToRelative(0f, 1.21f, -0.955f, 2.19f, -2.133f, 2.19f)
+                close()
+            }
+            path(
+                stroke = SolidColor(Color.Black),
+                strokeLineWidth = 1.5f,
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round
+            ) {
+                moveTo(9f, 16f)
+                curveToRelative(0.85f, 0.63f, 1.885f, 1f, 3f, 1f)
+                reflectiveCurveToRelative(2.15f, -0.37f, 3f, -1f)
+                moveToRelative(-5.5f, -4.5f)
+                verticalLineTo(11f)
+                moveToRelative(5f, 0.5f)
+                verticalLineTo(11f)
+            }
+        }.build()
+
+        return _HomeSmile!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _HomeSmile: ImageVector? = null
