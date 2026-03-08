@@ -1,5 +1,6 @@
 package com.dev.mynauicons_compose
 
+import MynaIcons.filled.Heart
 import MynaIcons.filled.TextJustify
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -35,7 +36,7 @@ fun App() {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Icon(
-                imageVector = MynaIcons.Filled.TextJustify,
+                imageVector = MynaIcons.Filled.Heart,
                 contentDescription = ""
             )
         }

@@ -61,7 +61,7 @@ Outline icon:
 
 ```kotlin
 Icon(
-    imageVector = MynaIcons.Outline.MiHeart,
+    imageVector = MynaIcons.Outline.Heart,
     contentDescription = null
 )
 ```
@@ -74,7 +74,7 @@ Icon(
 Column {
 
     Icon(
-        imageVector = MynaIcons.Filled.MiHeart,
+        imageVector = MynaIcons.Filled.Heart,
         contentDescription = null
     )
 
@@ -83,7 +83,7 @@ Column {
     )
 
     Icon(
-        imageVector = MynaIcons.Outline.MiHeart,
+        imageVector = MynaIcons.Outline.Heart,
         contentDescription = null
     )
 
