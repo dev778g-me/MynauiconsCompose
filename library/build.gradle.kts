@@ -25,7 +25,7 @@ kotlin {
             instrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
     }
-
+    jvm()
     // For iOS targets, this is also where you should
     // configure native binary output. For more information, see:
     // https://kotlinlang.org/docs/multiplatform-build-native-binaries.html#build-xcframeworks
@@ -99,6 +99,42 @@ kotlin {
                 // on common by default and will correctly pull the iOS artifacts of any
                 // KMP dependencies declared in commonMain.
             }
+        }
+        mavenPublishing{
+            coordinates(
+                groupId = "io.github.dev778g-me",
+                artifactId = "mynauicons-compose",
+                version = "1.0.0"
+            )
+
+            // configure p
+            pom {
+                name.set("mynauicons-compose")
+                description.set("mynaui icon library for compose multiplatform")
+                inceptionYear.set("2026")
+                url.set("https://github.com/dev778g-me/MynauiconsCompose")
+
+                developers {
+                    developer {
+                        id.set("dev778g-me")
+                        name.set("dev")
+                        email.set("sanji778g@gmail.com")
+                    }
+                }
+
+                licenses {
+                    license {
+                        name.set("MIT")
+                        url.set("https://opensource.org/licenses/MIT")
+                    }
+                }
+
+                scm {
+                    url.set("https://github.com/dev778g-me/MynauiconsCompose")
+                }
+            }
+            publishToMavenCentral(automaticRelease = false)
+            signAllPublications()
         }
     }
 
