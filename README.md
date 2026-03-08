@@ -49,10 +49,10 @@ Each icon can be accessed through these style objects.
 ## 🚀 Usage
 
 Basic usage with the Compose `Icon` component:
-
+Filled icon:
 ```kotlin
 Icon(
-    imageVector = MynaIcons.Filled.MiHeart,
+    imageVector = MynaIcons.Filled.Heart,
     contentDescription = null
 )
 ```
