@@ -115,5 +115,3 @@ https://mynaui.com/icons
 Mynaui Icons are licensed under the **MIT License**.
 
 This Compose wrapper library follows the same license.
-
-hello sir
